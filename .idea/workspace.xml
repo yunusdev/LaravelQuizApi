@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6922229d-2b1c-4d78-934e-9b2f0ff16368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TestCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TestCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TestResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TestResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-    </list>
+    <list default="true" id="6922229d-2b1c-4d78-934e-9b2f0ff16368" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,30 +295,7 @@
             <path>
               <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,12 +340,12 @@
       <updated>1561029308808</updated>
       <workItem from="1561029310585" duration="32880000" />
       <workItem from="1561104987083" duration="18610000" />
-      <workItem from="1561141201460" duration="4421000" />
+      <workItem from="1561141201460" duration="4637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55911000" />
+    <option name="totallyTimeSpent" value="56127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,7 +358,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="745" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
