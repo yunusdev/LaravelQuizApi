@@ -19,12 +19,20 @@ use Illuminate\Http\Request;
 
 
 Route::post('login', 'AuthController@login');
+
 Route::post('register', 'AuthController@register');
+
 Route::get('users', 'AuthController@allUsers');
+
+//Take a Test
+
+Route::post('/topic/{slug}/test', 'TestController@takeTest');
+
 
 Route::group(['middleware' => 'auth:api'], function() {
 
     Route::get('logout', 'AuthController@logout');
+
     Route::get('user', 'AuthController@user');
 
     Route::apiResource('/topic', 'TopicController');
@@ -32,6 +40,12 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::get('all/questions', 'QuestionController@allQuestions');
 
     Route::apiResource('topic/{slug}/questions', 'QuestionController');
+
+    Route::get('/topic/{slug}/results/{test}', 'TestController@testResults')->name('testResults');
+
+    Route::get('/topic/{slug}/results', 'TestController@topicResults')->name('topicResults');
+
+    Route::get('/all/results', 'TestController@allResults')->name('allResults');
 
     Route::apiResource('question/{question}/question_options', 'QuestionOptionController');
 

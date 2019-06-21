@@ -18,7 +18,7 @@ class QuestionController extends Controller
     public function allQuestions(){
 
 
-        $questions = Question::with('questionOptions')->latest()->get();
+        $questions = Question::with('questionOptions')->inRandomOrder()->get();
 
         $questions_coll = QuestionsCollection::collection($questions);
 
@@ -30,7 +30,7 @@ class QuestionController extends Controller
 
     $topic = Topic::where('slug', $slug)->first();
 
-    $questions = Question::where('topic_id', $topic->id)->with('questionOptions')->latest()->get();
+    $questions = Question::where('topic_id', $topic->id)->with('questionOptions')->inRandomOrder()->get();
 
     $questions_coll = QuestionsCollection::collection($questions);
 

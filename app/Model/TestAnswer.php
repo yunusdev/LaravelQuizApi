@@ -4,9 +4,8 @@ namespace App\Model;
 
 //use Illuminate\Database\Eloquent\Model;
 
-class Question extends Model
+class TestAnswer extends Model
 {
-    //
 
     public function topic(){
 
@@ -14,9 +13,9 @@ class Question extends Model
 
     }
 
-    public function questionOptions(){
+    public function question(){
 
-        return $this->hasMany(QuestionOption::class)->inRandomOrder();
+        return $this->belongsTo(Question::class);
 
     }
 }
