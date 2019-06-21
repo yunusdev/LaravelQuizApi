@@ -18,6 +18,9 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Http\Exceptions\ThrottleRequestsException;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+
+
 
 class Handler extends ExceptionHandler
 {
@@ -64,6 +67,10 @@ class Handler extends ExceptionHandler
     {
         if ($exception instanceof InvalidArgumentException) {
             return $this->errorResponse($exception->getMessage(), 405);
+        }
+
+        if ($exception instanceof ModelNotFoundException && $request->wantsJson()) {
+            return response()->json(['message' => 'Not Found!'], 404);
         }
 
         if ($exception instanceof ErrorException) {
