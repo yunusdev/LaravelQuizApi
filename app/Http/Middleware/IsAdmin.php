@@ -2,12 +2,13 @@
 
 namespace App\Http\Middleware;
 
-use App\User;
+use App\Traits\ApiResponser;
 use Closure;
-use Illuminate\Support\Facades\Auth;
 
-class CheckApiToken
+class IsAdmin
 {
+
+    use ApiResponser;
     /**
      * Handle an incoming request.
      *
@@ -17,13 +18,14 @@ class CheckApiToken
      */
     public function handle($request, Closure $next)
     {
-        if(!empty(trim($request->input('api_token')))){
 
-            $is_exists = User::where('id' , Auth::guard('api')->id())->exists();
-            if($is_exists){
+            if (auth('api')->user()->isAdmin()){
+
+
                 return $next($request);
+
             }
-        }
-        return response()->json('Invalid Token');
+
+        return $this->errorResponse('Not Authorized', 503);
     }
 }

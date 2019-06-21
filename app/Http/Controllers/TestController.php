@@ -16,6 +16,12 @@ class TestController extends Controller
 {
     use ApiResponser;
 
+    public function __construct(){
+
+        $this->middleware('is_admin')->only('topicResults', 'allResults');
+
+    }
+
     public function takeTest(Request $request, $slug){
 
         $topic = Topic::where('slug', $slug)->first();

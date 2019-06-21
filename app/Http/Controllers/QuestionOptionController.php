@@ -15,6 +15,12 @@ class QuestionOptionController extends Controller
 
     use ApiResponser;
 
+    public function __construct(){
+
+        $this->middleware('is_admin')->only('store', 'update', 'delete');
+
+    }
+
     public function index(Question $question){
 
         $question_options = QuestionOption::where('question_id', $question->id)->latest()->get();

@@ -13,6 +13,12 @@ class TopicController extends Controller
 {
 
     use ApiResponser;
+
+    public function __construct(){
+
+        $this->middleware('is_admin')->only('store', 'update', 'delete');
+
+    }
     /**
      * Display a listing of the resource.
      *

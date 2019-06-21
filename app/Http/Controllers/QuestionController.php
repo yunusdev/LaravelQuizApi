@@ -15,6 +15,12 @@ class QuestionController extends Controller
 
     use ApiResponser;
 
+    public function __construct(){
+
+        $this->middleware('is_admin')->only('store', 'update', 'delete');
+
+    }
+
     public function allQuestions(){
 
 

@@ -37,17 +37,21 @@ Route::group(['middleware' => 'auth:api'], function() {
 
     Route::apiResource('/topic', 'TopicController');
 
-    Route::get('all/questions', 'QuestionController@allQuestions');
-
     Route::apiResource('topic/{slug}/questions', 'QuestionController');
 
-    Route::get('/topic/{slug}/results/{test}', 'TestController@testResults')->name('testResults');
+    Route::get('all/questions', 'QuestionController@allQuestions');
+
+    Route::apiResource('question/{question}/question_options', 'QuestionOptionController');
 
     Route::get('/topic/{slug}/results', 'TestController@topicResults')->name('topicResults');
 
     Route::get('/all/results', 'TestController@allResults')->name('allResults');
 
-    Route::apiResource('question/{question}/question_options', 'QuestionOptionController');
+
+    Route::get('/topic/{slug}/results/{test}', 'TestController@testResults')->name('testResults');
+
+
+
 
 });
 
