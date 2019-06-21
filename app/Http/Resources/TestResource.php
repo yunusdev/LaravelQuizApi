@@ -21,6 +21,7 @@ class TestResource extends Resource
             'score' => $this->result . ' / ' . $this->topic->questions->count(),
             'created_at' => (string) $this->created_at,
             'topic' => (string) $this->topic->title,
+            'topic_id' =>  $this->topic->id,
             'test_answers' => $this->testAns(),
             'links' => [
 

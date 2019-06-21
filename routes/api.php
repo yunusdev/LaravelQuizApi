@@ -28,7 +28,6 @@ Route::get('users', 'AuthController@allUsers');
 
 Route::post('/topic/{slug}/test', 'TestController@takeTest');
 
-
 Route::group(['middleware' => 'auth:api'], function() {
 
     Route::get('logout', 'AuthController@logout');
@@ -47,10 +46,7 @@ Route::group(['middleware' => 'auth:api'], function() {
 
     Route::get('/all/results', 'TestController@allResults')->name('allResults');
 
-
     Route::get('/topic/{slug}/results/{test}', 'TestController@testResults')->name('testResults');
-
-
 
 
 });
