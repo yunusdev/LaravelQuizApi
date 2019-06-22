@@ -47,15 +47,15 @@ return [
     ],
 
     'twitter' => [
-        'client_id'     => env('TWITTER_ID'),
-        'client_secret' => env('TWITTER_SECRET'),
-        'redirect'      => env('TWITTER_CALLBACK'),
+        'client_id'     => env('j3AECR3WKETTYDjTxHPqW7fV1'),
+        'client_secret' => env('Acm96RYGpspbzrCandTrRmSX3rkKf4DVrH2V8w70VvTJ1FAsAX'),
+        'redirect'      => env('http://localhost:8000/auth/twitter/callback'),
     ],
 
     'google' => [
-        'client_id'     => env('GOOGLE_ID'),
-        'client_secret' => env('GOOGLE_SECRET'),
-        'redirect'      => env('GOOGLE_CALLBACK'),
+        'client_id'     => env('962049330801-gmr79481tc5og5u2ahata0h024akh5gi.apps.googleusercontent.com'),
+        'client_secret' => env('NuH9QW_GceOIFvAG0uUjPaDt'),
+        'redirect'      => env('http://localhost:8000/auth/google/callback'),
     ],
 
 ];

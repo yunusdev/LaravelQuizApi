@@ -35,8 +35,9 @@ class AuthController extends Controller
 
         $user = new User([
             'name' => $request->name,
-            'image' => env('APP_URL') . '/profileImages/' . $name,
+            'image' => 'https://laravel-quiz-api.herokuapp.com/profileImages/' . $name,
             'email' => $request->email,
+            'is_admin' => $request->is_admin,
             'password' => bcrypt($request->password)
         ]);
 
