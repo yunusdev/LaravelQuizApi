@@ -94,8 +94,8 @@
                 </div>
 
                 <div class="links">
-                    <a style="font-size: larger; font-weight: bold; font-style: italic; color: red" href="https://laravel.com/docs">Api Documentation</a>
-                    <a style="font-size: larger; font-weight: bold; font-style: italic; color: red" href="https://laravel.com/docs">Github Repo</a>
+                    <a style="font-size: larger; font-weight: bold; font-style: italic; color: red" href="https://documenter.getpostman.com/view/3107567/S1a1b9H6?version=latest">Api Documentation</a>
+                    <a style="font-size: larger; font-weight: bold; font-style: italic; color: red" href="https://github.com/YunusDev/LaravelQuizApi">Github Repo</a>
 
                 </div>
             </div>

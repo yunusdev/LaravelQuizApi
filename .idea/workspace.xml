@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6922229d-2b1c-4d78-934e-9b2f0ff16368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +31,13 @@
           <entry key="env" value="7" />
           <entry key="gitignore" value="1" />
           <entry key="json" value="2" />
-          <entry key="php" value="201" />
+          <entry key="php" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="7" />
-          <entry key="Blade" value="3" />
+          <entry key="Blade" value="4" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="2" />
           <entry key="PHP" value="198" />
@@ -126,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -134,6 +133,15 @@
               <folding>
                 <element signature="e#40#86#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -190,7 +198,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Services/SocialAccountsService.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
         <option value="$PROJECT_DIR$/database/factories/QuestionFactory.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -219,6 +226,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_06_20_180201_create_questions_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
       </list>
     </option>
   </component>
@@ -395,6 +403,17 @@
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -439,12 +458,12 @@
       <workItem from="1561029310585" duration="32880000" />
       <workItem from="1561104987083" duration="18610000" />
       <workItem from="1561141201460" duration="18338000" />
-      <workItem from="1561196381621" duration="12627000" />
+      <workItem from="1561196381621" duration="13265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82455000" />
+    <option name="totallyTimeSpent" value="83093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,13 +608,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/profileImages/1561160912_DSC0383.JPG">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="97" column="143" selection-start-line="97" selection-start-column="143" selection-end-line="97" selection-end-column="143" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_20_162854_create_topics_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -899,6 +911,13 @@
           <folding>
             <element signature="e#40#86#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
         </state>
       </provider>
     </entry>
