@@ -40,7 +40,8 @@
         },
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories",
+            "App/Http/Middleware/isAdmin.php"
         ]
     },
     "autoload-dev": {

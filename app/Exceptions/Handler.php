@@ -14,6 +14,7 @@ use Illuminate\Support\MessageBag;
 use Illuminate\Validation\ValidationException;
 use InvalidArgumentException;
 use LogicException;
+use ReflectionException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Http\Exceptions\ThrottleRequestsException;
 use Illuminate\Http\Response;
@@ -74,6 +75,10 @@ class Handler extends ExceptionHandler
         }
 
         if ($exception instanceof ErrorException) {
+            return $this->errorResponse($exception->getMessage(), 405);
+        }
+
+        if ($exception instanceof ReflectionException) {
             return $this->errorResponse($exception->getMessage(), 405);
         }
 
