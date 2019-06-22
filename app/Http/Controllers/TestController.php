@@ -18,7 +18,7 @@ class TestController extends Controller
 
     public function __construct(){
 
-        $this->middleware('is_admin')->only('topicResults', 'allResults');
+//        $this->middleware('is_admin')->only('topicResults', 'allResults');
 
     }
 

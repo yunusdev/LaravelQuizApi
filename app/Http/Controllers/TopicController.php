@@ -16,7 +16,7 @@ class TopicController extends Controller
 
     public function __construct(){
 
-        $this->middleware('is_admin')->only('store', 'update', 'delete');
+//        $this->middleware('is_admin')->only('store', 'update', 'delete');
 
     }
     /**
