@@ -24,7 +24,7 @@ class QuestionController extends Controller
     public function allQuestions(){
 
 
-        $questions = Question::with('questionOptions')->inRandomOrder()->get();
+        $questions = Question::with('questionOptions')->latest()->get();
 
         $questions_coll = QuestionsCollection::collection($questions);
 
@@ -50,7 +50,7 @@ class QuestionController extends Controller
 
         $this->validate($request, [
 
-            'title' => 'required',
+            'option' => 'required',
             'answer_explanation' => 'required'
 
         ]);
@@ -59,7 +59,7 @@ class QuestionController extends Controller
 
         $question = new Question;
 
-        $question->title = $request->title;
+        $question->option = $request->option;
         $question->topic_id = $topic->id;
         $question->answer_explanation = $request->answer_explanation;
 
@@ -86,20 +86,21 @@ class QuestionController extends Controller
 
         $this->validate($request, [
 
-            'title' => 'required',
+            'option' => 'required',
             'answer_explanation' => 'required'
 
         ]);
 
         $topic = Topic::where('slug', $slug)->first();
 
-        if ($request->title) {
+        if ($request->option) {
 
-            $question->title = $request->title;
+            $question->option = $request->option;
         }
         $question->topic_id = $topic->id;
 
-        if ($request->title) {
+        if ($request->answer_explanation) {
+
              $question->answer_explanation = $request->answer_explanation;
         }
 

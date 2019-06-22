@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Model\SocialProvider;
+use App\Model\Test;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -42,6 +43,12 @@ class User extends Authenticatable
     public function socialProviders()
     {
         return $this->hasMany(SocialProvider::class);
+    }
+
+    public function tests(){
+
+        return $this->hasMany(Test::class);
+
     }
 
     public function isAdmin(){

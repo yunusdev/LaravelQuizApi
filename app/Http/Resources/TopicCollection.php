@@ -29,7 +29,7 @@ class TopicCollection extends Resource
                     'href' => route('topic.show', $this->id)
                 ],
                 [
-                    'rel' => 'talk.questions',
+                    'rel' => 'Topic Questions',
                     'href' => route('questions.index', $this->slug),
                 ],
 

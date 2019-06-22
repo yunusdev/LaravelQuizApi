@@ -18,7 +18,7 @@ class QuestionOptionsCollection extends Resource
         return [
 
             'id' => $this->id,
-            'title' => $this->title,
+            'option' => $this->option,
             'isCorrect' => $this->isCorrect  == 1 ? 'Correct' : 'InCorrect',
             'created_at' => (string) $this->created_at,
             'question' => $this->question,

@@ -32,7 +32,7 @@ Route::group(['middleware' => 'auth:api'], function() {
 
     Route::get('logout', 'AuthController@logout');
 
-    Route::get('user', 'AuthController@user');
+    Route::get('user', 'AuthController@user')->name('user');
 
     Route::apiResource('/topic', 'TopicController');
 
@@ -42,15 +42,19 @@ Route::group(['middleware' => 'auth:api'], function() {
 
     Route::apiResource('question/{question}/question_options', 'QuestionOptionController');
 
+    Route::get('/topic/{slug}/result/{test}', 'TestController@testResult')->name('testResult');
+
     Route::get('/topic/{slug}/results', 'TestController@topicResults')->name('topicResults');
+
+    Route::get('/user/results', 'TestController@authUserResults')->name('authUserResults');
 
     Route::get('/all/results', 'TestController@allResults')->name('allResults');
 
-    Route::get('/topic/{slug}/results/{test}', 'TestController@testResults')->name('testResults');
 
 
 });
 
+Route::get('/test', 'TestController@test');
 
 
 

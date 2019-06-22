@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\UserCollection;
+use App\Http\Resources\UserResource;
 use App\Traits\ApiResponser;
 use App\User;
 use Carbon\Carbon;
@@ -37,6 +39,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password)
         ]);
+
         $user->save();
 
         $tokenResult = $user->createToken('Personal Access Token');
@@ -97,19 +100,20 @@ class AuthController extends Controller
      */
     public function user(Request $request)
     {
-        return response()->json($request->user());
+        $user = new UserResource($request->user());
+
+        return $this->showOne($user);
+
     }
 
     public function allUsers(){
 
-        $users =  User::all();
+        $users_col =  User::all();
+
+        $users = UserCollection::collection($users_col);
 
         return $this->showAll($users);
 
     }
 
-//    public function redirectToProvider($provider)
-//    {
-//        return Socialite::driver($provider)->redirect();
-//    }
 }

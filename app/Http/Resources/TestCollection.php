@@ -22,16 +22,17 @@ class TestCollection extends Resource
             'created_at' => (string) $this->created_at,
             'topic' => (string) $this->topic->title,
             'topic_id' =>  $this->topic->id,
+            'user_id' =>  $this->user_id,
             'test_answers' => $this->testAns(),
             'links' => [
 
                 [
                     'rel' => 'self',
-                    'href' => route('testResults', [$this->topic->slug, $this->id])
+                    'href' => route('testResult', [$this->topic->slug, $this->id])
                 ],
 
                 [
-                    'rel' => 'Results in ' . $this->topic->title,
+                    'rel' => 'Results in Topic',
                     'href' => route('topicResults', [$this->topic->slug])
                 ],
 

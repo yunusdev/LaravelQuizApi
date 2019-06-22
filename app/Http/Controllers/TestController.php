@@ -32,8 +32,10 @@ class TestController extends Controller
 
         $result = 0;
 
+        $auth_id = auth('api')->id();
+
         $test = Test::create([
-            'user_id' => auth('api')->id(),
+            'user_id' => $auth_id,
             'topic_id'  => $topic->id,
             'result'  => $result,
         ]);
@@ -59,7 +61,7 @@ class TestController extends Controller
 //            }
 
             TestAnswer::create([
-                'user_id'     => auth('api')->id(),
+                'user_id'     => $auth_id,
                 'test_id'     => $test->id,
                 'topic_id'     => $topic->id,
                 'question_id' => $question,
@@ -76,13 +78,26 @@ class TestController extends Controller
 
     }
 
-    public function testResults($slug, Test $test){
+    public function testResult($slug, Test $test){
 
         $topic = Topic::where('slug', $slug)->first();
 
         $test_res = new TestResource($test);
 
         return $this->showOne($test_res);
+
+    }
+
+    public function authUserResults(){
+
+        $auth_id = auth('api')->id();
+
+        $tests = Test::where('user_id', $auth_id)->get();
+
+        $test_col = TestCollection::collection($tests);
+
+        return $this->showAll($test_col);
+
 
     }
 
@@ -102,6 +117,24 @@ class TestController extends Controller
         $test_col = TestCollection::collection($tests);
 
         return $this->showAll($test_col);
+
+    }
+
+    public function test(){
+
+        $questions = \App\Model\Question::all();
+
+
+        foreach($questions as $question){
+
+            $option_id = $question->questionOptions->random()->id;
+
+            $option = QuestionOption::find($option_id);
+
+            $option->isCorrect = 1;
+
+            $option->save();
+        }
 
     }
 }
