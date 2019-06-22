@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6922229d-2b1c-4d78-934e-9b2f0ff16368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/QuestionOptionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/QuestionOptionResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/QuestionOptionsCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/QuestionOptionsCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TestCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TestCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TestResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TestResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TopicCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TopicCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TopicResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TopicResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_20_180224_create_question_options_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_20_180224_create_question_options_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +30,7 @@
           <entry key="JPG" value="1" />
           <entry key="env" value="3" />
           <entry key="gitignore" value="1" />
+          <entry key="json" value="1" />
           <entry key="php" value="177" />
         </counts>
       </usages-collector>
@@ -53,6 +39,7 @@
           <entry key=".env file" value="3" />
           <entry key="Blade" value="3" />
           <entry key="Image" value="1" />
+          <entry key="JSON" value="1" />
           <entry key="PHP" value="174" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -62,6 +49,7 @@
           <entry key="dummy" value="14" />
           <entry key="env" value="41" />
           <entry key="gitignore" value="1" />
+          <entry key="json" value="2" />
           <entry key="php" value="5151" />
         </counts>
       </usages-collector>
@@ -69,6 +57,7 @@
         <counts>
           <entry key=".env file" value="41" />
           <entry key="Blade" value="149" />
+          <entry key="JSON" value="2" />
           <entry key="PHP" value="5002" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
@@ -91,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TestController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
@@ -99,6 +88,15 @@
               <folding>
                 <element signature="e#40#78#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -178,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Services/SocialUserResolver.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/app/Model/Model.php" />
@@ -229,6 +226,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/TestController.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/TestCollection.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/TestResource.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -376,31 +374,6 @@
               <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -445,12 +418,12 @@
       <workItem from="1561029310585" duration="32880000" />
       <workItem from="1561104987083" duration="18610000" />
       <workItem from="1561141201460" duration="18338000" />
-      <workItem from="1561196381621" duration="3695000" />
+      <workItem from="1561196381621" duration="4430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73523000" />
+    <option name="totallyTimeSpent" value="74258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,7 +489,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_20_191005_create_categories_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_20_191316_create_categories_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -878,6 +850,13 @@
           <folding>
             <element signature="e#40#78#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
