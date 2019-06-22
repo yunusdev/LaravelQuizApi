@@ -50,7 +50,7 @@ class QuestionController extends Controller
 
         $this->validate($request, [
 
-            'option' => 'required',
+            'title' => 'required',
             'answer_explanation' => 'required'
 
         ]);
@@ -86,7 +86,7 @@ class QuestionController extends Controller
 
         $this->validate($request, [
 
-            'option' => 'required',
+            'title' => 'required',
             'answer_explanation' => 'required'
 
         ]);
