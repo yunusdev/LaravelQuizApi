@@ -41,7 +41,7 @@ class QuestionOptionController extends Controller
 
         $question_option = new QuestionOption;
 
-        $question_option->title = $request->title;
+        $question_option->option = $request->option;
         $question_option->question_id = $question->id;
         if ($request->isCorrect){
 
@@ -67,9 +67,9 @@ class QuestionOptionController extends Controller
         ]);
 
 
-        if ($request->title) {
+        if ($request->option) {
 
-            $questionOption->title = $request->title;
+            $questionOption->option = $request->option;
         }
 
         $questionOption->question_id = $question->id;

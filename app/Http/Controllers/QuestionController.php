@@ -59,7 +59,7 @@ class QuestionController extends Controller
 
         $question = new Question;
 
-        $question->option = $request->option;
+        $question->title = $request->title;
         $question->topic_id = $topic->id;
         $question->answer_explanation = $request->answer_explanation;
 
@@ -93,9 +93,9 @@ class QuestionController extends Controller
 
         $topic = Topic::where('slug', $slug)->first();
 
-        if ($request->option) {
+        if ($request->title) {
 
-            $question->option = $request->option;
+            $question->title = $request->title;
         }
         $question->topic_id = $topic->id;
 

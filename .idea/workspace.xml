@@ -32,7 +32,7 @@
           <entry key="env" value="7" />
           <entry key="gitignore" value="1" />
           <entry key="json" value="2" />
-          <entry key="php" value="199" />
+          <entry key="php" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -41,7 +41,7 @@
           <entry key="Blade" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="196" />
+          <entry key="PHP" value="198" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -114,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+            <state relative-caret-position="257">
+              <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
               <folding>
                 <element signature="e#40#80#0#PHP" expanded="true" />
               </folding>
@@ -126,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            <state relative-caret-position="238">
+              <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
               <folding>
                 <element signature="e#40#86#0#PHP" expanded="true" />
               </folding>
@@ -216,9 +216,9 @@
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TestController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TopicController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_20_180201_create_questions_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_20_180201_create_questions_table.php" />
       </list>
     </option>
   </component>
@@ -380,6 +380,13 @@
             <path>
               <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LaravelQuizApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LaravelQuizApi" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -432,12 +439,12 @@
       <workItem from="1561029310585" duration="32880000" />
       <workItem from="1561104987083" duration="18610000" />
       <workItem from="1561141201460" duration="18338000" />
-      <workItem from="1561196381621" duration="12025000" />
+      <workItem from="1561196381621" duration="12627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81853000" />
+    <option name="totallyTimeSpent" value="82455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -861,13 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_20_180224_create_question_options_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="e#40#86#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -878,19 +882,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_20_180224_create_question_options_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="257">
+          <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
+          <folding>
+            <element signature="e#40#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionOptionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
           <folding>
-            <element signature="e#40#80#0#PHP" expanded="true" />
+            <element signature="e#40#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
