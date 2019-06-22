@@ -81,6 +81,8 @@
                 </div>
             @endif
 
+                {{--<img src="http://localhost:8000/profileImages/1561160912_DSC0383.JPG" height="100" width="100" alt="">--}}
+
             <div class="content">
                 <div class="title m-b-md">
                     Laravel

@@ -18,11 +18,22 @@ class AuthController extends Controller
     {
         $request->validate([
             'name' => 'required|string',
+            'image' => 'required',
             'email' => 'required|string|email|unique:users',
             'password' => 'required|string|confirmed'
         ]);
+
+        if ($file = $request->file('image')){
+
+            $name = time() . $file->getClientOriginalName();
+
+            $file->move('profileImages', $name);
+
+        }
+
         $user = new User([
             'name' => $request->name,
+            'image' => env('APP_URL') . '/profileImages/' . $name,
             'email' => $request->email,
             'password' => bcrypt($request->password)
         ]);
